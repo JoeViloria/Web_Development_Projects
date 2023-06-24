@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Addition Game</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <div class="main">
+
+            <!-- Heading -->
+            <h1><span> Add & Conquer! </span> Addition Game</h1>
+
+            <!-- Main Box -->
+            <div class="main-box">
+                <div class="show-answer"><span id="ans"></span></div>
+
+                <div class="box-1">
+                    <div class="box-col">
+                        <input type="textf" id="intext1" class="intext11">
+                    </div>
+
+                    <div class="add-s">
+                        <p>+</p>
+                    </div>
+
+                    <div class="box-col">
+                        <input type="textf" id="intext" class="intext11">
+                    </div>
+                </div>
+
+                <!-- Text Input -->
+                <div class="box-2">
+                    <input type="text" id="intext2">
+                    
+                </div>
+
+                <!-- Button -->
+                <div class="box-2">
+                    <button class="btn" onclick="Game()"> Check Answer </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let n1 = Math.floor(Math.random()*100+1);
+        let n2 = Math.floor(Math.random()*100+1);
+
+        document.getElementById("intext").value = n1;
+        document.getElementById("intext1").value = n2;
+
+        let adds= n1 + n2;
+
+        function Game() {
+            var user = document.getElementById("intext2").value;
+
+            if(user == adds) {
+                document.getElementById("ans").innerHTML = "Wow, amazing! Your answer is correct!";
+            } else {
+                document.getElementById("ans").innerHTML = "Oops! Please double check your answer";
+            }
+
+            var user = document.getElementById("intext2").value = "";
+
+        n1 = Math.floor(Math.random()*20+1);
+        n2 = Math.floor(Math.random()*20+1);
+
+        document.getElementById("intext").value = n1;
+        document.getElementById("intext1").value = n2;
+
+        adds= n1 + n2;
+        }
+
+        function reset() {
+                document.getElementsByClassName(".intext").reset();
+            }
+    </script>
+
+</body>
+</html>
