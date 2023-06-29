@@ -1,0 +1,201 @@
+body {
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+#container {
+	width: 1200px;
+	/* border: 1px solid grey; */
+	height: 100px;
+	margin: 0 auto;
+}
+
+
+#logo img {
+	height: 80px;
+	width: 80px;
+	}
+		
+#header{
+	height: 100px;
+	padding: 10px 0;
+	}
+
+#brand{
+	float: left;
+	padding-top: 5px;
+	margin-top: 15px;
+	}
+
+a{
+	font-size: 50px;
+	font-weight: 100;
+	color: #00263b;
+	text-decoration: none;
+}
+
+#search {
+	float: right;
+	background-color: #ff5200;
+	width: 400px;
+	height: 50px;
+	padding: 15px 15px 0 15px;
+	margin-top: 5px;
+	}
+
+.text{
+	float: left;
+	width: 300px;
+	padding: 6px;
+	font-size: 15px;
+	color: #00263b;
+	background: white url(magnifying.png) right center no-repeat;
+	border: 1px solid #00a1ab;
+}
+
+.submit{
+	float: right;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+	background-color: #00263b;
+}
+
+.clear {
+	clear: both;
+}
+
+#menu {
+	height: 60px;
+	background-color: #00263b;
+	padding: 6px 0;
+}
+
+ul {
+	list-style: none;
+}
+
+#menu ul li{
+	float:left;
+	padding: 0 30px;
+	height: 30px;
+	border-right: 1px solid #ff5200;
+}
+
+#menu ul li:last-child {
+	border-right: none;
+}
+
+#menu ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+	line-height: 30px;
+	-webkit-transition: font-size 0.3s ease;
+	-moz-transition: font-size 0.3s ease;
+	-o-transition: font-size 0.3s ease;
+	-ms-transition: font-size 0.3s ease;
+	transition: font-size 0.3s ease;
+}
+
+#menu ul li a:hover, #menu ul li a.active {
+	font-size: 20px;
+	font-weight: bold;
+	color: #00a1ab;
+}
+
+#introduction {
+	padding: 30px;
+	padding-bottom: 10px;
+	margin: 15px 0;
+}
+
+#introduction h3 {
+	color: #6f0000;
+	font-size: 30px;
+	text-align: center;
+}
+
+#introduction p {
+	font-size: 25px;
+	text-align: center;
+}
+
+hr {
+	border-style: double;
+	border-width: 2px;
+	color: #ff5200;
+}
+
+.sidebar {
+	height: auto;
+	width: 500px;
+	/* border: 1px solid #6f0000; */
+	padding: 20px 30px;
+}
+
+.sidebar h3 {
+	color: #6f0000;
+	font-size: 30px;
+}
+
+#leftsidebar ul li{
+	padding-bottom: 5px;
+	padding-left: 5px;
+	list-style-image: url(arrow.png); 
+}
+
+#rightsidebar ul li{
+	padding-bottom: 5px;
+	padding-left: 5px;
+	list-style-image: url(checkmark.png); 
+}
+
+.sidebar ul li a{
+	list-style: none;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+	text-decoration: none;
+	color: #ff5200;
+	font-weight: bold;
+	-webkit-transition: font-size 0.3s ease;
+	-moz-transition: font-size 0.3s ease;
+	-o-transition: font-size 0.3s ease;
+	-ms-transition: font-size 0.3s ease;
+	transition: font-size 0.3s ease;
+}
+
+#leftsidebar{
+	float: left;
+}
+
+#rightsidebar{
+	float: right;
+}
+
+.footer {
+	height: auto;
+	/* background-color: #00263b; */
+	text-align: center;
+	padding: 10px;
+	margin-top: 30px;
+	color: #00263b;
+	font-size: 15px
+	font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  /* align-content: space-evenly; */
+  grid-template-columns: 360px 410px auto;
+  }
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  
+  
