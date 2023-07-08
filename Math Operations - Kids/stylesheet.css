@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #e8ffff;
+}
+  
+  .container {
+    padding: 20px;
+    overflow: hidden;
+    background-color:#e8ffff;
+}
+
+  .container h1 {
+    float: left;
+    margin-left: 3%;
+    color: #213e3b;
+    font-size: 4rem;
+  }
+
+  /* Operations */
+  .container ul { 
+    list-style-type: none;
+    font-size: 2rem;
+    margin-left: 50%;
+  }
+
+  .container li {
+    margin-top: 10px;
+    float: left;
+    padding: 0 20px 0 20px;
+  }
+
+  /* Menu babs */
+  .container a {
+    text-decoration: none;
+    color: #213e3b;
+  }
+  
+  /* Line below current page */
+  .current a::after {
+    content: '-';
+    font-size: 4px;
+    background-color: #41aea9; 
+    display: block;
+  }
+
+  .equations-wrap {
+    display: grid;
+    grid-template-rows: 60% 40%;
+  }
+
+  .equation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: #fff;
+    background-color: #41aea9;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .equation h1 {
+    display: inline;
+    padding: 20px;
+  }
+  
+  .answer-options {
+    font-size: 2rem;
+    margin: 15px;
+  }
+
+  .answer-options h1 {
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #option1 {
+    background-color: #213e3b;
+    color: white;
+    transition: 1s;
+  }
+
+  #option1:hover {
+    color: #213e3b;
+    background: white;
+  }
+
+  #option2 {
+    background-color: #213e3b;
+    color: white;
+    transition: 1s;
+  }
+
+  #option2:hover {
+    color: #213e3b;
+    background: white;
+  }
+
+  #option3 {
+    background-color: #213e3b;
+    color: white;
+    transition: 1s;
+  }
+
+  #option3:hover {
+    color: #213e3b;
+    background: white;
+  }
+
+  #option4 {
+    background-color: #213e3b;
+    color: white;
+    transition: 1s;
+  }
+
+  #option4:hover {
+    color: #213e3b;
+    background: white;
+  }
